@@ -1,0 +1,38 @@
+@import "./utils/variables";
+@import "./utils/mixin";
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid red;
+}
+
+.body_restaurants {
+    background: $main-background;
+    min-width: 200px;
+}
+
+// header_restaurants
+
+.header__restaurants {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 63px;
+    background: $second-background;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.header__logo {
+    width: 197px;
+    height: 36px;
+}
+.logo__ohmyfood {
+    width: 162px;
+    height: 36px;
+}
+
+.img__restaurants {
+    width: 100%;
+}

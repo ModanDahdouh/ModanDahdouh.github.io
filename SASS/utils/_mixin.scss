@@ -1,0 +1,5 @@
+
+@mixin shadows($shadow-size-restaurants: $shadow-size-menu + $shadow-restaurants_card-menu-rgba $shadow-btn-rgba $shadow-functionement-rgba) {
+    box-shadow: $shadow-size-restaurants $shadow-restaurants_card-menu-rgba;
+}
+
