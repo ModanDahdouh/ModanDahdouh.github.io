@@ -1,5 +1,17 @@
 
-@mixin shadows($shadow-size-restaurants: $shadow-size-menu + $shadow-restaurants_card-menu-rgba $shadow-btn-rgba $shadow-functionement-rgba) {
-    box-shadow: $shadow-size-restaurants $shadow-restaurants_card-menu-rgba;
+// all box shadows
+@mixin shadows-header {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+@mixin shadows-btn {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+// border-radius 
+
+@mixin border-radius-btn {
+    border-radius: 25px;
 }
 

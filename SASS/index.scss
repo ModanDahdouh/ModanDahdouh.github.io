@@ -6,6 +6,9 @@
     margin: 0;
     list-style: none;
     border: 1px solid red;
+    text-decoration: none;
+    font-family: Roboto; 
+    color: black;
 }
 
 .body_restaurants {
@@ -22,17 +25,228 @@
     width: 100%;
     min-height: 63px;
     background: $second-background;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    @include shadows-header;
 }
-.header__logo {
-    width: 197px;
-    height: 36px;
-}
-.logo__ohmyfood {
-    width: 162px;
-    height: 36px;
+.header__title {
+    text-align: center;
+    font-size: 30px;
+    font-family: Shrikhand;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.img__restaurants {
+// main
+.main-restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $second-background;
+    padding-bottom: 80px;
+}
+
+// formulaire
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $grey2;
     width: 100%;
+    height: 50px;
+}
+
+//main 
+
+.main__title {
+    text-align: center;
+    width: 291px;
+    height: 68px;
+    margin: 35px 0 35px 0;
+}
+
+.main__p {
+    text-align: center;
+    width: 315px;
+    height: 46px;
+}
+
+.button__link {
+    margin: 30px 0 30px 0;
+}
+
+.button__restaurants {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 218px;
+    height:50px;
+    @include border-radius-btn;
+    @include shadows-btn;
+    background: $btn-heart-background;
+    color: $main-background;
+}
+
+// section fonctionnement
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 440px;
+    gap: 20px;
+}
+
+.fonctionnement__title {
+    text-align: start;
+    width: 90%;
+    margin: 20px;
+}
+
+
+
+.fonctionnement__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);;
+    align-items: center;
+    width: 322px;
+    height: 72px;
+    margin: 20px;
+    gap: 20px;
+    background: $second-background;
+    border-radius: 20px;
+}
+
+
+.ellipse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    background: $ellipse-backoground;
+    color: $second-background;
+}
+
+.fonctionnement__p {
+    width: 211px;
+    height: 15px;
+    text-align: center;
+}
+
+
+// restaurants card
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    
+}
+
+.restaurants__card {
+    width: 340px;
+    height: 250px;
+    background: $second-background;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 15px;
+}
+
+.restaurants__img {
+    object-fit: cover;
+    border-radius: 15px 15px 0 0 ;
+    width: 100%;
+    height: 70%;
+}
+
+.restaurants__logo__title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.restaurants-box-title {
+width: 80%;
+margin: 5px;
+}
+
+.restaurants__title {
+    font-size: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.restaurants__p {
+    font-size: 17px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+// footer 
+
+.footer-restaurants-background {
+    height: 186px;
+    padding: 25px;
+    background: $grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer__title {
+    color: $main-background;
+    font-size: 18px;
+    font-family:'Shrikhand';
+    font-weight: 400;
+    line-height: normal;
+}
+
+.box-link-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100px;
+}
+
+.box-link__logo__footer {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    gap: 13px;
+}
+
+.footer__logo {
+    width: 11px;
+    object-fit: cover;
+    
+}
+
+.footer__p {
+    height: 20px;
+    color: $main-background;
+    font-size: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+
+}
+.font__footer__p {
+    font-weight: 400;
 }
