@@ -39,8 +39,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: $second-background;
-    padding-bottom: 80px;
+    background: $main-background;
+    padding-bottom: 50px;
 }
 
 // formulaire
@@ -52,21 +52,30 @@
     background: $grey2;
     width: 100%;
     height: 50px;
+    gap: 15px;
+}
+
+.location__type {
+    outline: none;
+    border: none;
+    background: $grey2;
 }
 
 //main 
 
 .main__title {
     text-align: center;
-    width: 291px;
+    width: 90%;
     height: 68px;
-    margin: 35px 0 35px 0;
+    margin: 30px 0 25px 0;
+    max-width: 650px;
 }
 
 .main__p {
     text-align: center;
-    width: 315px;
+    width: 90%;
     height: 46px;
+    max-width: 650px;
 }
 
 .button__link {
@@ -89,36 +98,47 @@
 
 .fonctionnement {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    min-height: 230px;
     width: 100%;
-    height: 440px;
-    gap: 20px;
+    
+    
 }
 
 .fonctionnement__box {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .fonctionnement__title {
     text-align: start;
-    width: 90%;
-    margin: 20px;
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.fonctionnement__box__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
 
 .fonctionnement__card {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: 72px;
-    margin: 20px;
-    gap: 20px;
+    
+    gap: 5px;
     background: $second-background;
     border-radius: 20px;
 }
@@ -129,7 +149,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 5px;
+    left: -14px;
     width: 24px;
     height: 24px;
     border-radius: 24px;
@@ -141,7 +161,7 @@
 }
 
 .fonctionnement__p {
-    width: 211px;
+    width: 190px;
     height: 15px;
     text-align: center;
 }
@@ -149,21 +169,32 @@
 
 // restaurants card
 
-.restaurants {
+.restaurants__section {
     display: flex;
-    flex-direction: column;
     align-items: center;
     width: 100%;
     gap: 20px;
+}
+
+.restaurants__box__main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     
 }
 
+.restaurants__title {
+    width: 80%;
+}
+
 .restaurants__card {
-    width: 340px;
+    width: 100%;
     height: 250px;
     background: $second-background;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
     border-radius: 15px;
+    margin-top: 20px; 
 }
 
 
@@ -256,4 +287,85 @@
 }
 .font__footer__p {
     font-weight: 400;
+}
+
+
+// media query
+
+
+
+@media (min-width: 770px) {
+
+    // main
+    .main__title {
+        margin: 30px 0 5px 0;
+    }
+
+    .button__link {
+        margin: 10px 0 30px 0; 
+    }
+    // fonctionnement
+
+    .fonctionnement__box {
+        padding: 0 100px;
+    }
+
+    .fonctionnement__box__card {
+        flex-direction: row;
+    }
+
+    .fonctionnement__p {
+        width: 60%;
+    }
+
+    // restaurants
+    .restaurants__box__main {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 100px 0 100px;
+        
+    }
+    .restaurants__box {
+        display: flex;
+        gap: 20px;
+    }
+
+    //footer
+
+    .footer-restaurants-background {
+        padding: 25px 100px;
+    }
+
+
+}
+@media (min-width: 1024px) {
+
+    .restaurants__box__main {
+        padding:0 180px 0 180px;
+    }
+
+    .restaurants__box {
+        gap: 100px;
+        padding-bottom: 30px;
+    }
+
+    // fonctionnement 
+
+    .fonctionnement__box {
+        padding: 0 180px;
+    }
+
+    // footer 
+
+     .footer-restaurants-background {
+         flex-direction: row-reverse;
+         justify-content: flex-start;
+         align-items: flex-end;
+         height: 60px;
+ }
+     .box-link-footer {
+        height: 20px;
+         flex-direction: row;
+    }
+
 }
