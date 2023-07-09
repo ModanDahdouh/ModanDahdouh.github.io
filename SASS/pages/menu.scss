@@ -1,4 +1,10 @@
+
 // hearder
+.header__title__menu {
+    font-family: Shrikhand;
+    font-size: 30px;
+    font-weight: 400;
+}
 
 .header__menu {
     display: flex;
@@ -10,6 +16,9 @@
 .header__menu__link {
     position: absolute;
     left: 15px;
+    font-family: Shrikhand;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 
@@ -32,6 +41,13 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    gap: 35px;
+}
+
+.title__menu {
+font-family: Shrikhand;
+font-size: 28px;
+font-weight: 400;
 }
 
 .section__menu {
@@ -42,7 +58,7 @@
     flex-direction: column;
     gap: 40px;
     position: absolute;
-    top: 300px;
+    top: 32%;
     border-radius: 40px 40px 0px 0px;
     background: $main-background;
     padding: 40px 15px;
@@ -55,12 +71,29 @@
     gap: 12px;
 }
 
+
+
 .menu__title__all {
     width: 100%;
     max-width: 650px;
+    text-transform: uppercase;
+}
+
+.title__section__card {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    border-bottom: 2px solid $badge-green;
+    width: 40px;
+    height: 30px;
 }
 
 .card__menu {
+    position: relative;
     max-width: 650px;
     display: flex;
     align-items: center;
@@ -74,7 +107,39 @@
 
 .card__text {
     width: 100%;
+    padding-left: 15px;
 }
+
+.title__card__menu {
+font-size: 18px;
+font-weight: 500;
+}
+
+.paragraphe__card__menu {
+    font-size: 15px;
+}
+
+.card__dollar {
+    padding-right: 15px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.animation__card {
+    position: absolute;
+    right: 0;
+    width: 0;
+    opacity: 0;
+    
+    height: 71px;
+    background: $badge-green;
+    border-radius: 0 15px 15px 0;
+}
+
+
+
+
+
 
 .button__menu__link {
     display: flex;
@@ -99,4 +164,16 @@
          padding: 40px 210px;
 
      }
+
+     .card__menu:hover {
+        .card__dollar  {
+            transition: 1s;
+            transform: translate(-60px);
+        }
+        .animation__card {
+            transition: 1s;
+            opacity: 1;
+            width: 59px;
+        }
+    }
  }
