@@ -212,6 +212,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
   padding: 8px;
 }
 
@@ -234,6 +235,38 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.checkbox__class__1, .checkbox__class__2, .checkbox__class__3, .checkbox__class__4 {
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/logo/Like.svg");
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+#checkbox__1:checked ~ .checkbox__class__1 {
+  background-image: url("/assets/images/logo/Coeur.png");
+  background-repeat: no-repeat;
+}
+
+#checkbox__2:checked ~ .checkbox__class__2 {
+  background-image: url("/assets/images/logo/Coeur.png");
+  background-repeat: no-repeat;
+}
+
+#checkbox__3:checked ~ .checkbox__class__3 {
+  background-image: url("/assets/images/logo/Coeur.png");
+  background-repeat: no-repeat;
+}
+
+#checkbox__4:checked ~ .checkbox__class__4 {
+  background-image: url("/assets/images/logo/Coeur.png");
+  background-repeat: no-repeat;
+}
+
+.checkbox__none {
+  display: none;
 }
 
 .footer-restaurants-background {
@@ -333,6 +366,8 @@
     justify-content: flex-start;
     align-items: flex-end;
     height: 60px;
+    z-index: 10;
+    position: relative;
   }
   .box-link-footer {
     height: 20px;
@@ -365,26 +400,13 @@
   display: flex;
   justify-content: center;
   background: #FFFFFF;
-  height: 1384px;
+  min-height: 1392px;
 }
 
 .main__img__menu {
   width: 100%;
   height: 275px;
   object-fit: cover;
-}
-
-.div__menu__logo {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  gap: 35px;
-}
-
-.title__menu {
-  font-family: Shrikhand;
-  font-size: 28px;
-  font-weight: 400;
 }
 
 .section__menu {
@@ -408,6 +430,35 @@
   gap: 12px;
 }
 
+.div__menu__logo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 35px;
+  width: 100%;
+  max-width: 650px;
+}
+
+.checkbox__class__menu {
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/logo/Like.svg");
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+#checkbox__menu:checked ~ .checkbox__class__menu {
+  background-image: url("/assets/images/logo/Coeur.png");
+  background-repeat: no-repeat;
+}
+
+.title__menu {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-weight: 400;
+}
+
 .menu__title__all {
   width: 100%;
   max-width: 650px;
@@ -428,12 +479,13 @@
 }
 
 .card__menu {
+  overflow: hidden;
   position: relative;
   max-width: 650px;
   display: flex;
   align-items: center;
   width: 100%;
-  height: 70px;
+  height: 69px;
   border-radius: 15.043px;
   background: #FFFFFF;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
@@ -451,6 +503,9 @@
 
 .paragraphe__card__menu {
   font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .card__dollar {
@@ -459,14 +514,23 @@
   font-size: 15px;
 }
 
-.animation__card {
+.checkbox__menu__none {
   position: absolute;
-  right: 0;
-  width: 0;
   opacity: 0;
-  height: 71px;
-  background: #99E2D0;
-  border-radius: 0 15px 15px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.animation__mobile {
+  transition: 1s;
+  width: 0;
+  transform: translate(0);
+  right: -59px;
+  bottom: 2px;
+}
+
+.animation__p__mobile {
+  transition: 1s;
 }
 
 .button__menu__link {
@@ -486,18 +550,47 @@
   color: #F6F6F6;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 365px) {
+  .main__menu {
+    min-height: 1311px;
+  }
+  .card__menu {
+    height: 65px;
+  }
+  #checkbox__animation:checked ~ .animation__mobile {
+    transform: translate(-59px);
+    transition: 1s;
+  }
+  #checkbox__animation:checked ~ .animation__p__mobile {
+    transform: translate(-59px);
+    transition: 1s;
+  }
+}
+@media (min-width: 1440px) {
+  .header__menu {
+    height: 95px;
+  }
+  .main__menu {
+    height: 1624px;
+  }
+  .main__img__menu {
+    height: 572px;
+  }
   .section__menu {
     padding: 40px 210px;
+    top: 631px;
   }
-  .card__menu:hover .card__dollar {
+  .div__menu__logo {
+    justify-content: center;
+  }
+  .card__menu:hover .animation__mobile {
     transition: 1s;
     transform: translate(-60px);
   }
-  .card__menu:hover .animation__card {
+  .card__menu:hover .animation__p__mobile {
     transition: 1s;
     opacity: 1;
-    width: 59px;
+    transform: translate(-59px);
   }
 }
 

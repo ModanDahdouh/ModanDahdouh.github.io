@@ -234,6 +234,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     padding:8px;
     
 }
@@ -257,6 +258,35 @@
     font-weight: 300;
     line-height: normal;
 }
+
+.checkbox__class__1 ,.checkbox__class__2 ,.checkbox__class__3 ,.checkbox__class__4 {
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/logo/Like.svg');
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+#checkbox__1:checked ~ .checkbox__class__1 {
+    background-image: url('/assets/images/logo/Coeur.png');
+    background-repeat: no-repeat;
+  }
+  #checkbox__2:checked ~ .checkbox__class__2 {
+    background-image: url('/assets/images/logo/Coeur.png');
+    background-repeat: no-repeat;
+  }
+  #checkbox__3:checked ~ .checkbox__class__3 {
+    background-image: url('/assets/images/logo/Coeur.png');
+    background-repeat: no-repeat;
+  }
+  #checkbox__4:checked ~ .checkbox__class__4 {
+    background-image: url('/assets/images/logo/Coeur.png');
+    background-repeat: no-repeat;
+  }
+
+  .checkbox__none {
+    display: none;
+  }
 
 
 // footer 
@@ -388,6 +418,8 @@
          justify-content: flex-start;
          align-items: flex-end;
          height: 60px;
+         z-index: 10;
+         position: relative;
  }
      .box-link-footer {
         height: 20px;

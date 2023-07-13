@@ -28,7 +28,8 @@
     display: flex;
     justify-content: center;
     background: $second-background;
-    height: 1384px;
+    min-height: 1392px;
+
 }
 
 .main__img__menu {
@@ -37,18 +38,9 @@
     object-fit: cover;
 }
 
-.div__menu__logo {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    gap: 35px;
-}
 
-.title__menu {
-font-family: Shrikhand;
-font-size: 28px;
-font-weight: 400;
-}
+
+
 
 .section__menu {
     box-sizing: border-box;
@@ -71,6 +63,34 @@ font-weight: 400;
     gap: 12px;
 }
 
+.div__menu__logo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+    max-width: 650px;
+}
+
+.checkbox__class__menu {
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/logo/Like.svg');
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+#checkbox__menu:checked ~ .checkbox__class__menu {
+    background-image: url('/assets/images/logo/Coeur.png');
+    background-repeat: no-repeat;
+  }
+
+.title__menu {
+font-family: Shrikhand;
+font-size: 28px;
+font-weight: 400;
+}
 
 
 .menu__title__all {
@@ -93,31 +113,36 @@ font-weight: 400;
 }
 
 .card__menu {
+    overflow: hidden;
     position: relative;
     max-width: 650px;
     display: flex;
     align-items: center;
     width: 100%;
-    height: 70px;
+    height: 69px;
     border-radius: 15.043px;
     background: $second-background;
     box-shadow: 0px 4.011494159698486px
-    15.043103218078613px 0px rgba(0, 0, 0, 0.10);
+    15.043103218078613px 0px rgba(0, 0, 0, 0.10);   
 }
+    .card__text {
+        width: 100%;
+        padding-left: 15px;
+        
+    }
 
-.card__text {
-    width: 100%;
-    padding-left: 15px;
-}
+    .title__card__menu {
+        font-size: 18px;
+        font-weight: 500;
+    }
 
-.title__card__menu {
-font-size: 18px;
-font-weight: 500;
-}
+    .paragraphe__card__menu {
+        font-size: 15px;
+        overflow: hidden;
+        text-overflow : ellipsis;
+        white-space: nowrap
+    }
 
-.paragraphe__card__menu {
-    font-size: 15px;
-}
 
 .card__dollar {
     padding-right: 15px;
@@ -125,20 +150,26 @@ font-weight: 500;
     font-size: 15px;
 }
 
-.animation__card {
+.checkbox__menu__none {
     position: absolute;
-    right: 0;
-    width: 0;
     opacity: 0;
-    
-    height: 71px;
-    background: $badge-green;
-    border-radius: 0 15px 15px 0;
+    width: 100%;
+    height: 100%;
 }
 
+.animation__mobile {
+    transition: 1s;
+    width: 0;
+    transform: translate(0);
+    right: -59px;
+    bottom: 2px;
+  }
 
-
-
+  .animation__p__mobile {
+    transition: 1s;
+  }
+  
+   
 
 
 .button__menu__link {
@@ -159,21 +190,61 @@ font-weight: 500;
     color: $main-background;
 }
 
- @media (min-width: 1024px) {
-     .section__menu {
+@media (min-width:365px) {
+    .main__menu {
+        min-height: 1311px;
+    }
+    .card__menu {
+        height: 65px;
+    }
+
+    #checkbox__animation:checked ~ .animation__mobile {
+        transform: translate(-59px);
+        transition: 1s;
+      }
+  
+     #checkbox__animation:checked ~ .animation__p__mobile {
+       transform: translate(-59px);
+       transition: 1s;
+     }
+
+}
+
+ @media (min-width: 1440px) {
+
+    .header__menu {
+        height: 95px;
+    }
+    .main__menu {
+        height: 1624px;
+    }
+    
+    .main__img__menu {
+        height: 572px;
+     }
+    
+    .section__menu {
          padding: 40px 210px;
+         top: 631px;
+         
 
      }
 
-     .card__menu:hover {
-        .card__dollar  {
+     .div__menu__logo {
+        justify-content: center;
+     }
+
+    .card__menu:hover {
+        .animation__mobile  {
             transition: 1s;
             transform: translate(-60px);
         }
-        .animation__card {
+        .animation__p__mobile {
             transition: 1s;
             opacity: 1;
-            width: 59px;
+            transform: translate(-59px);
         }
+        
+        
     }
- }
+}
