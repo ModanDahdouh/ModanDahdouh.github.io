@@ -173,7 +173,8 @@ font-weight: 400;
 
 
 .button__menu__link {
-    margin: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
    
 }
 .button__menu {
@@ -186,7 +187,6 @@ font-weight: 400;
     @include shadows-btn;
     background: $btn-heart-background;
     color: $main-background;
-    opacity: 0;
 }
 
 @media (min-width:365px) {

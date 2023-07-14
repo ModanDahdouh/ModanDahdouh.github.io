@@ -534,7 +534,8 @@
 }
 
 .button__menu__link {
-  margin: 30px 0 30px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .button__menu {
@@ -547,7 +548,6 @@
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
   color: #F6F6F6;
-  opacity: 0;
 }
 
 @media (min-width: 365px) {
