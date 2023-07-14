@@ -11,7 +11,8 @@
   background: #F6F6F6;
   min-width: 200px;
 }
-.body_restaurants .header__restaurants {
+
+.header__restaurants {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +21,8 @@
   background: #FFFFFF;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.body_restaurants .header__restaurants .header__title {
+
+.header__title {
   text-align: center;
   font-size: 30px;
   font-family: Shrikhand;
@@ -28,14 +30,16 @@
   font-weight: 400;
   line-height: normal;
 }
-.body_restaurants .main-restaurants {
+
+.main-restaurants {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #F6F6F6;
   padding-bottom: 50px;
 }
-.body_restaurants .main-restaurants .location {
+
+.location {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,28 +48,33 @@
   height: 50px;
   gap: 15px;
 }
-.body_restaurants .main-restaurants .location .location__type {
+
+.location__type {
   outline: none;
   border: none;
   background: #EAEAEA;
 }
-.body_restaurants .main__title {
+
+.main__title {
   text-align: center;
   width: 90%;
   height: 68px;
   margin: 30px 0 25px 0;
   max-width: 650px;
 }
-.body_restaurants .main__p {
+
+.main__p {
   text-align: center;
   width: 90%;
   height: 46px;
   max-width: 650px;
 }
-.body_restaurants .button__link {
+
+.button__link {
   margin: 30px 0 30px 0;
 }
-.body_restaurants .button__link .button__restaurants {
+
+.button__restaurants {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,15 +85,18 @@
   background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
   color: #F6F6F6;
 }
-.body_restaurants .button__link .button__restaurants:hover {
+
+.button__restaurants:hover {
   opacity: 0.8;
 }
-.body_restaurants .fonctionnement {
+
+.fonctionnement {
   display: flex;
   min-height: 230px;
   width: 100%;
 }
-.body_restaurants .fonctionnement .fonctionnement__box {
+
+.fonctionnement__box {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -92,18 +104,21 @@
   justify-content: center;
   padding: 20px;
 }
-.body_restaurants .fonctionnement .fonctionnement__box .fonctionnement__title {
+
+.fonctionnement__title {
   text-align: start;
   width: 100%;
   margin: 0 0 20px 0;
 }
-.body_restaurants .fonctionnement .fonctionnement__box .fonctionnement__box__card {
+
+.fonctionnement__box__card {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.body_restaurants .fonctionnement .fonctionnement__box .fonctionnement__box__card .fonctionnement__card {
+
+.fonctionnement__card {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -116,7 +131,8 @@
   background: #FFFFFF;
   border-radius: 20px;
 }
-.body_restaurants .fonctionnement .fonctionnement__box .fonctionnement__box__card .fonctionnement__card .ellipse {
+
+.ellipse {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,27 +143,36 @@
   border-radius: 24px;
   background: #9356DC;
 }
-.body_restaurants .fonctionnement .fonctionnement__box .fonctionnement__box__card .fonctionnement__card .ellipse .ellipse__p {
+
+.ellipse__p {
   color: #FFFFFF;
 }
-.body_restaurants .fonctionnement .fonctionnement__box .fonctionnement__box__card .fonctionnement__card .fonctionnement__p {
+
+.fonctionnement__p {
   width: 190px;
   height: 15px;
   text-align: center;
 }
-.body_restaurants .restaurants__section {
+
+.restaurants__section {
   display: flex;
   align-items: center;
   width: 100%;
   gap: 20px;
 }
-.body_restaurants .restaurants__section .restaurants__box__main {
+
+.restaurants__box__main {
   width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
 }
-.body_restaurants .restaurants__section .restaurants__box__main .restaurants__card {
+
+.restaurants__title {
+  width: 80%;
+}
+
+.restaurants__card {
   position: relative;
   width: 100%;
   height: 250px;
@@ -156,13 +181,15 @@
   border-radius: 15px;
   margin-top: 20px;
 }
-.body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__img {
+
+.restaurants__img {
   object-fit: cover;
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 70%;
 }
-.body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .nouveau__badge {
+
+.nouveau__badge {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,7 +206,8 @@
   background: #99E2D0;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__logo__title {
+
+.restaurants__logo__title {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -187,49 +215,57 @@
   align-items: center;
   padding: 8px;
 }
-.body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__logo__title .restaurants-box-title {
+
+.restaurants-box-title {
   width: 80%;
   margin: 5px;
 }
-.body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__logo__title .restaurants-box-title .restaurants__title {
+
+.restaurants__title {
   font-size: 18px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  width: 80%;
 }
-.body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__logo__title .restaurants-box-title .restaurants__p {
+
+.restaurants__p {
   font-size: 17px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
-.body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__logo__title .checkbox__class__1, .body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__logo__title .checkbox__class__2, .body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__logo__title .checkbox__class__3, .body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__logo__title .checkbox__class__4 {
+
+.checkbox__class__1, .checkbox__class__2, .checkbox__class__3, .checkbox__class__4 {
   background-repeat: no-repeat;
   background-image: url("/assets/images/logo/Like.svg");
   width: 22px;
   height: 22px;
   cursor: pointer;
 }
-.body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__logo__title #checkbox__1:checked ~ .checkbox__class__1 {
+
+#checkbox__1:checked ~ .checkbox__class__1 {
   background-image: url("/assets/images/logo/Coeur.png");
   background-repeat: no-repeat;
 }
-.body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__logo__title #checkbox__2:checked ~ .checkbox__class__2 {
+
+#checkbox__2:checked ~ .checkbox__class__2 {
   background-image: url("/assets/images/logo/Coeur.png");
   background-repeat: no-repeat;
 }
-.body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__logo__title #checkbox__3:checked ~ .checkbox__class__3 {
+
+#checkbox__3:checked ~ .checkbox__class__3 {
   background-image: url("/assets/images/logo/Coeur.png");
   background-repeat: no-repeat;
 }
-.body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__logo__title #checkbox__4:checked ~ .checkbox__class__4 {
+
+#checkbox__4:checked ~ .checkbox__class__4 {
   background-image: url("/assets/images/logo/Coeur.png");
   background-repeat: no-repeat;
 }
-.body_restaurants .restaurants__section .restaurants__box__main .restaurants__card .restaurants__logo__title .checkbox__none {
+
+.checkbox__none {
   display: none;
 }
 
@@ -338,6 +374,12 @@
     flex-direction: row;
   }
 }
+.header__title__menu {
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-weight: 400;
+}
+
 .header__menu {
   display: flex;
   height: 60px;
@@ -345,7 +387,10 @@
   align-items: center;
   justify-content: center;
 }
-.header__menu .header__title__menu {
+
+.header__menu__link {
+  position: absolute;
+  left: 15px;
   font-family: Shrikhand;
   font-size: 30px;
   font-weight: 400;
@@ -357,12 +402,14 @@
   background: #FFFFFF;
   min-height: 1392px;
 }
-.main__menu .main__img__menu {
+
+.main__img__menu {
   width: 100%;
   height: 275px;
   object-fit: cover;
 }
-.main__menu .section__menu {
+
+.section__menu {
   box-sizing: border-box;
   max-width: 1055px;
   width: 100%;
@@ -375,16 +422,15 @@
   background: #F6F6F6;
   padding: 40px 15px;
 }
-.main__menu .section__menu .gap__card {
+
+.gap__card {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
 }
-.main__menu .section__menu .gap__card .checkbox__none {
-  display: none;
-}
-.main__menu .section__menu .gap__card .div__menu__logo {
+
+.div__menu__logo {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -393,28 +439,33 @@
   width: 100%;
   max-width: 650px;
 }
-.main__menu .section__menu .gap__card .div__menu__logo .checkbox__class__menu {
+
+.checkbox__class__menu {
   background-repeat: no-repeat;
   background-image: url("/assets/images/logo/Like.svg");
   width: 22px;
   height: 22px;
   cursor: pointer;
 }
-.main__menu .section__menu .gap__card .div__menu__logo #checkbox__menu:checked ~ .checkbox__class__menu {
+
+#checkbox__menu:checked ~ .checkbox__class__menu {
   background-image: url("/assets/images/logo/Coeur.png");
   background-repeat: no-repeat;
 }
-.main__menu .section__menu .gap__card .div__menu__logo .title__menu {
+
+.title__menu {
   font-family: Shrikhand;
   font-size: 28px;
   font-weight: 400;
 }
-.main__menu .section__menu .gap__card .menu__title__all {
+
+.menu__title__all {
   width: 100%;
   max-width: 650px;
   text-transform: uppercase;
 }
-.main__menu .section__menu .gap__card .menu__title__all .title__section__card {
+
+.title__section__card {
   color: #000;
   font-family: Roboto;
   font-size: 16px;
@@ -426,7 +477,8 @@
   width: 40px;
   height: 30px;
 }
-.main__menu .section__menu .gap__card .card__menu {
+
+.card__menu {
   overflow: hidden;
   position: relative;
   max-width: 650px;
@@ -438,46 +490,55 @@
   background: #FFFFFF;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
 }
-.main__menu .section__menu .gap__card .card__menu .card__text {
+
+.card__text {
   width: 100%;
   padding-left: 15px;
 }
-.main__menu .section__menu .gap__card .card__menu .card__text .title__card__menu {
+
+.title__card__menu {
   font-size: 18px;
   font-weight: 500;
 }
-.main__menu .section__menu .gap__card .card__menu .card__text .paragraphe__card__menu {
+
+.paragraphe__card__menu {
   font-size: 15px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.main__menu .section__menu .gap__card .card__menu .checkbox__menu__none {
+
+.card__dollar {
+  padding-right: 15px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.checkbox__menu__none {
   position: absolute;
   opacity: 0;
   width: 100%;
   height: 100%;
 }
-.main__menu .section__menu .gap__card .card__menu .animation__p__mobile {
-  transition: 1s;
-}
-.main__menu .section__menu .gap__card .card__menu .animation__p__mobile .card__dollar {
-  padding-right: 15px;
-  font-weight: 700;
-  font-size: 15px;
-}
-.main__menu .section__menu .gap__card .card__menu .animation__mobile {
+
+.animation__mobile {
   transition: 1s;
   width: 0;
   transform: translate(0);
   right: -59px;
   bottom: 2px;
 }
-.main__menu .section__menu .button__menu__link {
+
+.animation__p__mobile {
+  transition: 1s;
+}
+
+.button__menu__link {
   display: flex;
   justify-content: center;
 }
-.main__menu .section__menu .button__menu__link .button__menu {
+
+.button__menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -487,9 +548,6 @@
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
   color: #F6F6F6;
-}
-.main__menu .section__menu .button__menu__link .button__menu:hover {
-  opacity: 0.1;
 }
 
 @media (min-width: 365px) {
@@ -515,21 +573,21 @@
   .main__menu {
     height: 1624px;
   }
-  .main__menu .main__img__menu {
+  .main__img__menu {
     height: 572px;
   }
-  .main__menu .section__menu {
+  .section__menu {
     padding: 40px 210px;
     top: 631px;
   }
-  .main__menu .div__menu__logo {
+  .div__menu__logo {
     justify-content: center;
   }
-  .main__menu .card__menu:hover .animation__mobile {
+  .card__menu:hover .animation__mobile {
     transition: 1s;
     transform: translate(-60px);
   }
-  .main__menu .card__menu:hover .animation__p__mobile {
+  .card__menu:hover .animation__p__mobile {
     transition: 1s;
     opacity: 1;
     transform: translate(-59px);
