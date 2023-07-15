@@ -1,0 +1,28 @@
+// hearder
+
+
+.header__menu {
+    display: flex;
+    height: 60px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .header__link {
+        position: absolute;
+        left: 15px;
+        font-family: Shrikhand;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .header__title__menu {
+        font-family: Shrikhand;
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header__menu {
+        height: 95px;
+    }
+}

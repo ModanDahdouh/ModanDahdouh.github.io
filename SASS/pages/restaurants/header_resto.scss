@@ -1,0 +1,18 @@
+// header_restaurants
+.header__restaurants {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 63px;
+    background: $second-background;
+    @include shadows-header;
+    .header__title {
+        text-align: center;
+        font-size: 30px;
+        font-family: Shrikhand;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

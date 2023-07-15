@@ -1,26 +1,22 @@
 
-
 @import "./utils/variables";
 @import "./utils/mixin";
 
-
-@import "./pages/restaurants.scss";
-@import "./pages/menu.scss";
-
-
-@import "./pages/footer.scss";
-
 // Restaurants
 
+@import "./pages/restaurants/body__resto.scss";
 @import "./pages/restaurants/header_resto.scss";
+@import "./pages/restaurants/formulaire_resto.scss";
+@import "./pages/restaurants/fonctionement_resto.scss";
 @import "./pages/restaurants/main_resto.scss";
-@import "./pages/restaurants/section_resto_1.scss";
-@import "./pages/restaurants/section_resto_2.scss";
-@import "./pages/restaurants/section_resto_3.scss";
+@import "./pages/restaurants/section_restaurants_resto.scss";
 
 // Menu
 
 @import "./pages/menu/header_menu.scss";
-@import "./pages/menu/section_menu_1.scss";
-@import "./pages/menu/section_menu_2.scss";
+@import "./pages/menu/main_menu_.scss";
+@import "./pages/menu/section_menu_.scss";
 
+//footer
+
+@import "./pages/footer.scss";
