@@ -103,7 +103,7 @@
 }
 
 .animation__p__mobile {
-    transition: 1s;
+    transition: 0.5s ease-in-out;
     .card__dollar {
         padding-right: 15px;
         font-weight: 700;
@@ -111,7 +111,7 @@
     }
 }
 .animation__mobile {
-    transition: 1s;
+    transition: 0.5s ease-in-out;
     width: 0;
     transform: translate(0);
     right: -59px;
@@ -147,11 +147,11 @@
     }
     #checkbox__animation:checked ~ .animation__mobile {
         transform: translate(-59px);
-        transition: 1s;
+        transition: 0.5s ease-in-out;
     }
     #checkbox__animation:checked ~ .animation__p__mobile {
        transform: translate(-59px);
-       transition: 1s;
+       transition: 0.5s ease-in-out;
     }
 }
 
@@ -165,11 +165,11 @@
     }
     .card__menu:hover {
         .animation__mobile  {
-            transition: 1s;
+            transition: 0.5s ease-in-out;
             transform: translate(-60px);
         }
         .animation__p__mobile {
-            transition: 1s;
+            transition: 0.5s ease-in-out;
             opacity: 1;
             transform: translate(-59px);
         }

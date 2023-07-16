@@ -12,7 +12,7 @@
   min-width: 200px;
 }
 
-.header__restaurants {
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,7 @@
   background: #FFFFFF;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-.header__restaurants .header__title {
+.header .header__title {
   text-align: center;
   font-size: 30px;
   font-family: Shrikhand;
@@ -30,6 +30,19 @@
   line-height: normal;
 }
 
+.header__link {
+  position: absolute;
+  left: 15px;
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@media (min-width: 1440px) {
+  .header {
+    height: 95px;
+  }
+}
 .location {
   display: flex;
   align-items: center;
@@ -285,31 +298,6 @@
     padding-bottom: 30px;
   }
 }
-.header__menu {
-  display: flex;
-  height: 60px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.header__menu .header__link {
-  position: absolute;
-  left: 15px;
-  font-family: Shrikhand;
-  font-size: 30px;
-  font-weight: 400;
-}
-.header__menu .header__title__menu {
-  font-family: Shrikhand;
-  font-size: 30px;
-  font-weight: 400;
-}
-
-@media (min-width: 1440px) {
-  .header__menu {
-    height: 95px;
-  }
-}
 .main__menu {
   display: flex;
   justify-content: center;
@@ -434,7 +422,7 @@
 }
 
 .animation__p__mobile {
-  transition: 1s;
+  transition: 0.5s ease-in-out;
 }
 .animation__p__mobile .card__dollar {
   padding-right: 15px;
@@ -443,7 +431,7 @@
 }
 
 .animation__mobile {
-  transition: 1s;
+  transition: 0.5s ease-in-out;
   width: 0;
   transform: translate(0);
   right: -59px;
@@ -475,11 +463,11 @@
   }
   #checkbox__animation:checked ~ .animation__mobile {
     transform: translate(-59px);
-    transition: 1s;
+    transition: 0.5s ease-in-out;
   }
   #checkbox__animation:checked ~ .animation__p__mobile {
     transform: translate(-59px);
-    transition: 1s;
+    transition: 0.5s ease-in-out;
   }
 }
 @media (min-width: 1440px) {
@@ -491,11 +479,11 @@
     justify-content: center;
   }
   .card__menu:hover .animation__mobile {
-    transition: 1s;
+    transition: 0.5s ease-in-out;
     transform: translate(-60px);
   }
   .card__menu:hover .animation__p__mobile {
-    transition: 1s;
+    transition: 0.5s ease-in-out;
     opacity: 1;
     transform: translate(-59px);
   }
@@ -548,7 +536,7 @@
 
 @media (min-width: 770px) {
   .footer {
-    padding: 25px 100px;
+    padding: 25px 80px 25px 100px;
   }
 }
 @media (min-width: 1024px) {
@@ -560,9 +548,16 @@
     z-index: 10;
     position: relative;
   }
+  .footer__title {
+    padding-left: 80px;
+  }
   .footer__box {
     height: 20px;
     flex-direction: row;
+    gap: 20px;
+  }
+  .footer__p--padding {
+    padding-left: 80px;
   }
 }
 

@@ -2,6 +2,9 @@
 @import "./utils/variables";
 @import "./utils/mixin";
 
+// Loader 
+@import "./pages/loader.scss";
+
 // Restaurants
 
 @import "./pages/restaurants/body__resto.scss";

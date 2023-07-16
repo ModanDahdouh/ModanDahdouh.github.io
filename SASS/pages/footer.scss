@@ -51,7 +51,7 @@
     //footer
 
     .footer {
-        padding: 25px 100px;
+        padding: 25px 80px 25px 100px;
     }
 }
 
@@ -65,8 +65,16 @@
          z-index: 10;
          position: relative;
     }
+    .footer__title {
+        padding-left: 80px;
+    }
     .footer__box {
         height: 20px;
          flex-direction: row;
+         gap: 20px;
+    }
+
+    .footer__p--padding {
+        padding-left: 80px;
     }
 }

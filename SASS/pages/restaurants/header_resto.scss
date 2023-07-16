@@ -1,5 +1,5 @@
 // header_restaurants
-.header__restaurants {
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,4 +15,17 @@
         font-weight: 400;
         line-height: normal;
     }
+}
+.header__link {
+    position: absolute;
+     left: 15px;
+     font-family: Shrikhand;
+     font-size: 30px;
+     font-weight: 400;
+}
+
+@media (min-width: 1440px) {
+.header {
+ height: 95px;
+}
 }
