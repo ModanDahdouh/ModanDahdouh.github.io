@@ -1,3 +1,8 @@
+.font--Shrikhand {
+  font-family: Shrikhand;
+  color: #101010;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -10,7 +15,6 @@
 .header .header__title {
   text-align: center;
   font-size: 30px;
-  font-family: Shrikhand;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -19,7 +23,6 @@
 .header__link {
   position: absolute;
   left: 15px;
-  font-family: Shrikhand;
   font-size: 30px;
   font-weight: 400;
 }
@@ -365,7 +368,6 @@
   background-repeat: no-repeat;
 }
 .gap__card .box__menu__title .menu__title {
-  font-family: Shrikhand;
   font-size: 28px;
   font-weight: 400;
 }
@@ -501,7 +503,6 @@
 .footer .footer__title {
   color: #F6F6F6;
   font-size: 18px;
-  font-family: "Shrikhand";
   font-weight: 400;
   line-height: normal;
 }

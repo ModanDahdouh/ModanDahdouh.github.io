@@ -9,7 +9,6 @@
     .header__title {
         text-align: center;
         font-size: 30px;
-        font-family: Shrikhand;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -17,10 +16,9 @@
 }
 .header__link {
     position: absolute;
-     left: 15px;
-     font-family: Shrikhand;
-     font-size: 30px;
-     font-weight: 400;
+    left: 15px;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 @media (min-width: 1440px) {

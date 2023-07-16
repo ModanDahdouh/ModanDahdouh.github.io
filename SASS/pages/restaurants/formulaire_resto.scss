@@ -4,13 +4,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $grey2;
+    background: $color-formulaire;
     width: 100%;
     height: 50px;
     gap: 15px;
     .location__type {
         outline: none;
         border: none;
-        background: $grey2;
+        background: $color-formulaire;
     }
 }
