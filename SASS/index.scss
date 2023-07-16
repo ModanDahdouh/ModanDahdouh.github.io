@@ -3,12 +3,15 @@
 @import "./utils/mixin";
 
 // Loader 
-@import "./pages/loader.scss";
+@import "./pages/components/loader.scss";
+
+//header 
+
+@import "./pages/components/header.scss";
 
 // Restaurants
 
 @import "./pages/restaurants/body__resto.scss";
-@import "./pages/restaurants/header_resto.scss";
 @import "./pages/restaurants/formulaire_resto.scss";
 @import "./pages/restaurants/fonctionement_resto.scss";
 @import "./pages/restaurants/main_resto.scss";
@@ -16,10 +19,9 @@
 
 // Menu
 
-@import "./pages/menu/header_menu.scss";
 @import "./pages/menu/main_menu_.scss";
 @import "./pages/menu/section_menu_.scss";
 
 //footer
 
-@import "./pages/footer.scss";
+@import "./pages/components/footer.scss";
