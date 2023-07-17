@@ -11,6 +11,7 @@
     background: $main-background;
     padding: 40px 15px;
 }
+
 .gap__card{
     display: flex;
     flex-direction: column;
@@ -31,12 +32,10 @@
             height: 22px;
             cursor: pointer;
         }
-        
         #checkbox__menu:checked ~ .checkbox__class__menu {
             background-image: url('/assets/images/logo/Coeur.png');
             background-repeat: no-repeat;
         }
-        
         .menu__title {
             font-size: 28px;
             font-weight: 400;

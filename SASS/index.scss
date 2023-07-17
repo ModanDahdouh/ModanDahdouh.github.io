@@ -19,9 +19,20 @@
 
 // Menu
 
+@import "./pages/menu/animation_card.scss";
 @import "./pages/menu/main_menu_.scss";
 @import "./pages/menu/section_menu_.scss";
 
 //footer
 
 @import "./pages/components/footer.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    // border: 1px solid red;
+    text-decoration: none;
+    font-family: Roboto; 
+    color: black;
+}

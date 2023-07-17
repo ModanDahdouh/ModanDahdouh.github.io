@@ -1,0 +1,21 @@
+
+.Entrées {
+    animation: shake1  2s 1;
+}
+.Plats {
+    animation: shake2  3s 1;
+}
+
+.Desserts {
+    animation: shake3  5s 1;
+}
+
+@keyframes shake1 {
+    0% {transform: translate(-200px,2px);}
+}
+@keyframes shake2 {
+    0% {transform: translate(-200px,2px);}
+}
+@keyframes shake3 {
+    0% {transform: translate(-200px,2px);}
+}

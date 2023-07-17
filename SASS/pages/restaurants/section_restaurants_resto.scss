@@ -80,21 +80,21 @@
                 cursor: pointer;
             }
             
-            #checkbox__1:checked ~ .checkbox__class__1 {
+            #checkbox__1:checked ~ .checkbox__class__1 {  
+                background-image: url('/assets/images/logo/Coeur.png');
+                background-repeat: no-repeat; 
+            }
+            #checkbox__2:checked ~ .checkbox__class__2 {
                 background-image: url('/assets/images/logo/Coeur.png');
                 background-repeat: no-repeat;
             }
-            #checkbox__2:checked ~ .checkbox__class__2 {
-            background-image: url('/assets/images/logo/Coeur.png');
-            background-repeat: no-repeat;
-            }
             #checkbox__3:checked ~ .checkbox__class__3 {
-            background-image: url('/assets/images/logo/Coeur.png');
-            background-repeat: no-repeat;
+                background-image: url('/assets/images/logo/Coeur.png');
+                background-repeat: no-repeat;
             }
             #checkbox__4:checked ~ .checkbox__class__4 {
-            background-image: url('/assets/images/logo/Coeur.png');
-            background-repeat: no-repeat;
+                background-image: url('/assets/images/logo/Coeur.png');
+                background-repeat: no-repeat;
             }
         
             .checkbox__none {
