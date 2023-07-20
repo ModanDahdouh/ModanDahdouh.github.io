@@ -25,6 +25,7 @@
         gap: 35px;
         width: 100%;
         max-width: 650px;
+        position: relative;
         .checkbox__class__menu1 {
             background-repeat: no-repeat;
             background-image: url('/assets/images/logo/Like.svg');
@@ -32,13 +33,12 @@
             height: 22px;
             cursor: pointer;
             display: flex;
-           
         }
         #checkbox__menu:checked ~ .checkbox__class__menu {
             background-image: url('/assets/images/logo/Coeur.png');
             background-repeat: no-repeat;
             width: 22px;
-            height: 1px;
+            height: 22px;
             animation: like 3s 1;
             display: flex;
         }
@@ -47,7 +47,6 @@
             50% {height: 10px}
             100% {height: 22px}
         }
-
         .menu__title {
             font-size: 28px;
             font-weight: 400;
@@ -89,9 +88,21 @@
     .card__text {
         width: 100%;
         padding-left: 15px;
+        font-size: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         .title__card__menu {
+            overflow: hidden;
+            white-space: nowrap;
+            color: #000;
+            text-overflow: ellipsis;
+            font-family: Roboto;
             font-size: 18px;
+            font-style: normal;
             font-weight: 500;
+            line-height: normal;
+
         }
         .paragraphe__card__menu {
             font-size: 15px;
@@ -102,23 +113,23 @@
     }
 }
 
-
-
-
 .checkbox__menu__none {
     position: absolute;
     opacity: 0;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .animation__p__mobile {
     transition: 0.5s ease-in-out;
     .card__dollar {
         padding-right: 15px;
+        padding-top: 25px;
         font-weight: 700;
         font-size: 15px;
     }
+    
 }
 .animation__mobile {
     transition: 0.5s ease-in-out;
@@ -162,6 +173,7 @@
     #checkbox__animation:checked ~ .animation__p__mobile {
        transform: translate(-59px);
        transition: 0.5s ease-in-out;
+       padding-left: 70px;
     }
 }
 

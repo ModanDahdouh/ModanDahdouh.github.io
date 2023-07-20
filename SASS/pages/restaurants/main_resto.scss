@@ -18,6 +18,7 @@
         width: 90%;
         height: 46px;
         max-width: 650px;
+        font-family: Roboto;
     }
     
     .button__link {
@@ -51,3 +52,16 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .main-restaurants .main__p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .main-restaurants .main__title {
+        font-family: Roboto;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    
+}
