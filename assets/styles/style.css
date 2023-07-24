@@ -497,8 +497,9 @@
   background-repeat: no-repeat;
   width: 22px;
   height: 22px;
-  animation: like 3s 1;
+  animation: like 3s linear 1;
   display: flex;
+  -webkit-animation: like 3s linear 1;
 }
 @keyframes like {
   0% {
