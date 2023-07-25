@@ -240,6 +240,34 @@ input[type=checkbox]:checked ~ .checkbox__class {
   display: none;
 }
 
+.button__link .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
+  color: #F6F6F6;
+  width: 218px;
+  height: 50px;
+}
+.button__link .button:hover {
+  opacity: 0.8;
+}
+
+.link__resto {
+  margin: 30px 0 30px 0;
+}
+
+.link__menu {
+  display: flex;
+  justify-content: center;
+}
+.link__menu .btn__menu {
+  width: 186px;
+  height: 50px;
+}
+
 .body_restaurants {
   background: #F6F6F6;
   min-width: 200px;
@@ -353,23 +381,6 @@ input[type=checkbox]:checked ~ .checkbox__class {
   height: 46px;
   max-width: 650px;
   font-family: Roboto;
-}
-.main-restaurants .button__link {
-  margin: 30px 0 30px 0;
-}
-.main-restaurants .button__link .button__restaurants {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 218px;
-  height: 50px;
-  border-radius: 25px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
-  color: #F6F6F6;
-}
-.main-restaurants .button__link .button__restaurants:hover {
-  opacity: 0.8;
 }
 
 @media (min-width: 770px) {

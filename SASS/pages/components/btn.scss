@@ -1,0 +1,29 @@
+.button__link {
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include border-radius-btn;
+        @include shadows-btn;
+        background: $btn-heart-background;
+        color: $main-background;
+        width: 218px;
+        height:50px;
+    }
+    .button:hover {
+        opacity: 0.80;
+    }
+}
+
+.link__resto {
+    margin: 30px 0 30px 0;
+}
+
+.link__menu {
+    display: flex;
+    justify-content: center;
+    .btn__menu {
+        width: 186px;
+        height:50px;
+    }
+}
