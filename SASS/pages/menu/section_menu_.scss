@@ -48,9 +48,7 @@
             height: 30px;
         }
     }
-    
 }
-
 
 .card__menu {
     overflow: hidden;
@@ -116,27 +114,6 @@
     transform: translate(0);
     right: -59px;
     bottom: 2px;
-}
-
-
-.button__menu__link {
-    display: flex;
-    justify-content: center;
-    .button__menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 186px;
-        height:50px;
-        @include border-radius-btn;
-        @include shadows-btn;
-        background: $btn-heart-background;
-        color: $main-background;
-    }
-    .button__menu:hover {
-        opacity: 0.8;
-    }
-   
 }
 
 

@@ -9,14 +9,16 @@
     line-height: 18;
     font-size: 50px;
     font-family: Shrikhand;
-    background:linear-gradient(0deg, rgb(147 86 220 / 71%) 0%, rgb(255 121 218 / 71%) 100%);
+   
     animation: linaer-gradient 2s linear 1;
     -webkit-animation: linaer-gradient 2s linear 1;
 }
 
 @keyframes linaer-gradient {
-    0%{background: linear-gradient(90deg, rgb(147 86 220 / 71%) 0%, rgb(255 121 218 / 71%) 100%);opacity: 1;}
-    100%{background: linear-gradient(270deg, rgb(147 86 220 / 71%) 0%, rgb(255 121 218 / 71%) 100%); opacity: 1;}  
+    
+    0%{background: linear-gradient(90deg, rgba(253, 251, 255, 0.95) 0%, rgba(255, 207, 241, 0.95) 100%); opacity: 1;}  
+    99%{background: linear-gradient(90deg, rgba(253, 251, 255, 0.90) 0%, rgba(255, 207, 241, 0.90) 100%); opacity: 1;}  
+    100%{background: linear-gradient(270deg, rgba(253, 251, 255, 0.85) 0%, rgba(255, 207, 241, 0.85) 100%); opacity: 1;}  
 } 
 
 .loader {

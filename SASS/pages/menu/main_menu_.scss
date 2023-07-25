@@ -12,11 +12,19 @@
     object-fit: cover;
 }
 
+// Menu La note enchantee page html
+ .la-note-enchantee {
+     height: 1460px;
+ }
+
 @media (min-width:365px) {
 
     .main__menu {
         min-height: 1311px;
     }
+     .la-note-enchantee {
+        height: 1385px;
+     }
 }
 
 @media (min-width: 1440px) {
@@ -28,4 +36,8 @@
     .main__img__menu {
         height: 572px;
      }
+
+    .la-note-enchantee {
+         height: 1715px;
+    }
 }
