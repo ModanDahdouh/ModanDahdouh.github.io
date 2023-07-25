@@ -2,12 +2,13 @@
 @import "./utils/variables";
 @import "./utils/mixin";
 
-// Loader 
+ 
+// Compenents
 @import "./pages/components/loader.scss";
-
-//header 
-
 @import "./pages/components/header.scss";
+@import "./pages/components/footer.scss";
+@import "./pages/components/btn-heart.scss";
+
 
 // Restaurants
 
@@ -23,9 +24,7 @@
 @import "./pages/menu/main_menu_.scss";
 @import "./pages/menu/section_menu_.scss";
 
-//footer
 
-@import "./pages/components/footer.scss";
 
 * {
     padding: 0;

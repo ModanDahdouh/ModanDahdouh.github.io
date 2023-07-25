@@ -129,6 +129,117 @@
     font-weight: 700;
   }
 }
+.footer {
+  position: relative;
+  height: 186px;
+  padding: 25px;
+  background: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.footer .footer__title {
+  color: #F6F6F6;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100px;
+}
+.footer__box .footer__link {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  gap: 13px;
+}
+.footer__box .footer__link .footer__logo {
+  width: 11px;
+  object-fit: cover;
+}
+.footer__box .footer__p {
+  height: 20px;
+  color: #F6F6F6;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.footer__box .font__footer--p {
+  font-weight: 400;
+}
+
+@media (min-width: 770px) {
+  .footer {
+    padding: 25px 80px 25px 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 60px;
+    position: relative;
+  }
+  .footer__title {
+    padding-left: 80px;
+  }
+  .footer__box {
+    height: 20px;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .footer__p--padding {
+    padding-left: 80px;
+  }
+}
+.checkbox__class {
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/logo/Like.svg");
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  display: flex;
+  animation: likeReturn 1s linear 1;
+  -webkit-animation: likeReturn 1s linear 1;
+}
+
+input[type=checkbox]:checked ~ .checkbox__class {
+  background-image: url("/assets/images/logo/Coeur.png");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  animation: like 1s linear 1;
+  display: flex;
+  -webkit-animation: like 1s linear 1;
+}
+
+@keyframes like {
+  0% {
+    background-image: url("/assets/images/logo/Like.svg");
+  }
+  100% {
+    background-image: url("/assets/images/logo/Coeur.png");
+  }
+}
+@keyframes likeReturn {
+  0% {
+    background-image: url("/assets/images/logo/Coeur.png");
+  }
+  100% {
+    background-image: url("/assets/images/logo/Like.svg");
+  }
+}
+.checkbox__none {
+  display: none;
+}
+
 .body_restaurants {
   background: #F6F6F6;
   min-width: 200px;
@@ -354,32 +465,6 @@
   font-weight: 300;
   line-height: normal;
 }
-.restaurants__box__main .restaurants__card .restaurants__logo__title .checkbox__class__1, .restaurants__box__main .restaurants__card .restaurants__logo__title .checkbox__class__2, .restaurants__box__main .restaurants__card .restaurants__logo__title .checkbox__class__3, .restaurants__box__main .restaurants__card .restaurants__logo__title .checkbox__class__4 {
-  background-repeat: no-repeat;
-  background-image: url("/assets/images/logo/Like.svg");
-  width: 22px;
-  height: 22px;
-  cursor: pointer;
-}
-.restaurants__box__main .restaurants__card .restaurants__logo__title #checkbox__1:checked ~ .checkbox__class__1 {
-  background-image: url("/assets/images/logo/Coeur.png");
-  background-repeat: no-repeat;
-}
-.restaurants__box__main .restaurants__card .restaurants__logo__title #checkbox__2:checked ~ .checkbox__class__2 {
-  background-image: url("/assets/images/logo/Coeur.png");
-  background-repeat: no-repeat;
-}
-.restaurants__box__main .restaurants__card .restaurants__logo__title #checkbox__3:checked ~ .checkbox__class__3 {
-  background-image: url("/assets/images/logo/Coeur.png");
-  background-repeat: no-repeat;
-}
-.restaurants__box__main .restaurants__card .restaurants__logo__title #checkbox__4:checked ~ .checkbox__class__4 {
-  background-image: url("/assets/images/logo/Coeur.png");
-  background-repeat: no-repeat;
-}
-.restaurants__box__main .restaurants__card .restaurants__logo__title .checkbox__none {
-  display: none;
-}
 
 @media (min-width: 770px) {
   .restaurants__box__main {
@@ -483,34 +568,6 @@
   width: 100%;
   max-width: 650px;
   position: relative;
-}
-.gap__card .box__menu__title .checkbox__class__menu1 {
-  background-repeat: no-repeat;
-  background-image: url("/assets/images/logo/Like.svg");
-  width: 22px;
-  height: 22px;
-  cursor: pointer;
-  display: flex;
-}
-.gap__card .box__menu__title #checkbox__menu:checked ~ .checkbox__class__menu {
-  background-image: url("/assets/images/logo/Coeur.png");
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 22px;
-  animation: like 3s linear 1;
-  display: flex;
-  -webkit-animation: like 3s linear 1;
-}
-@keyframes like {
-  0% {
-    height: 0;
-  }
-  50% {
-    height: 10px;
-  }
-  100% {
-    height: 22px;
-  }
 }
 .gap__card .box__menu__title .menu__title {
   font-size: 28px;
@@ -647,76 +704,6 @@
     transition: 0.5s ease-in-out;
     opacity: 1;
     transform: translate(-59px);
-  }
-}
-.footer {
-  position: relative;
-  height: 186px;
-  padding: 25px;
-  background: #353535;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-}
-.footer .footer__title {
-  color: #F6F6F6;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: normal;
-}
-.footer__box {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  height: 100px;
-}
-.footer__box .footer__link {
-  display: flex;
-  align-items: center;
-  height: 20px;
-  gap: 13px;
-}
-.footer__box .footer__link .footer__logo {
-  width: 11px;
-  object-fit: cover;
-}
-.footer__box .footer__p {
-  height: 20px;
-  color: #F6F6F6;
-  font-size: 16px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-.footer__box .font__footer--p {
-  font-weight: 400;
-}
-
-@media (min-width: 770px) {
-  .footer {
-    padding: 25px 80px 25px 100px;
-  }
-}
-@media (min-width: 1024px) {
-  .footer {
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: flex-end;
-    height: 60px;
-    position: relative;
-  }
-  .footer__title {
-    padding-left: 80px;
-  }
-  .footer__box {
-    height: 20px;
-    flex-direction: row;
-    gap: 20px;
-  }
-  .footer__p--padding {
-    padding-left: 80px;
   }
 }
 * {
