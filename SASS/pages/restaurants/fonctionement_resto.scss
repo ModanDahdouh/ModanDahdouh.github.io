@@ -34,6 +34,7 @@
                 gap: 5px;
                 background: $second-background;
                 border-radius: 20px;
+                
                 .ellipse {
                     display: flex;
                     align-items: center;
@@ -50,16 +51,19 @@
                 .ellipse__p {
                     color: $second-background;
                 }
+                .fonctionnement__img {
+                    padding-left: 20px;
+                }
                 .fonctionnement__p {
                     width: 190px;
                     height: 15px;
                     text-align: center;
                 }
-                
             }
         }
     }
 }
+
 
 @media (min-width: 770px) {
 

@@ -100,13 +100,10 @@
 
 .animation__p__mobile {
     transition: 0.5s ease-in-out;
-    .card__dollar {
-        padding-right: 15px;
-        padding-top: 25px;
-        font-weight: 700;
-        font-size: 15px;
-    }
-    
+    padding-right: 15px;
+    padding-top: 25px;
+    font-weight: 700;
+    font-size: 15px;
 }
 .animation__mobile {
     transition: 0.5s ease-in-out;
@@ -122,11 +119,92 @@
     .card__menu {
         height: 65px;
     }
-    #checkbox__animation:checked ~ .animation__mobile {
+    #checkbox__animation--1:checked ~ .animation__mobile {
         transform: translate(-59px);
         transition: 0.5s ease-in-out;
     }
-    #checkbox__animation:checked ~ .animation__p__mobile {
+    #checkbox__animation--1:checked ~ .animation__p__mobile {
+       transform: translate(-59px);
+       transition: 0.5s ease-in-out;
+       padding-left: 70px;
+    }
+    #checkbox__animation--2:checked ~ .animation__mobile {
+        transform: translate(-59px);
+        transition: 0.5s ease-in-out;
+    }
+    #checkbox__animation--2:checked ~ .animation__p__mobile {
+       transform: translate(-59px);
+       transition: 0.5s ease-in-out;
+       padding-left: 70px;
+    }
+    #checkbox__animation--3:checked ~ .animation__mobile {
+        transform: translate(-59px);
+        transition: 0.5s ease-in-out;
+    }
+    #checkbox__animation--3:checked ~ .animation__p__mobile {
+       transform: translate(-59px);
+       transition: 0.5s ease-in-out;
+       padding-left: 70px;
+    }
+    #checkbox__animation--4:checked ~ .animation__mobile {
+        transform: translate(-59px);
+        transition: 0.5s ease-in-out;
+    }
+    #checkbox__animation--4:checked ~ .animation__p__mobile {
+       transform: translate(-59px);
+       transition: 0.5s ease-in-out;
+       padding-left: 70px;
+    }
+    #checkbox__animation--5:checked ~ .animation__mobile {
+        transform: translate(-59px);
+        transition: 0.5s ease-in-out;
+    }
+    #checkbox__animation--5:checked ~ .animation__p__mobile {
+       transform: translate(-59px);
+       transition: 0.5s ease-in-out;
+       padding-left: 70px;
+    }
+    #checkbox__animation--6:checked ~ .animation__mobile {
+        transform: translate(-59px);
+        transition: 0.5s ease-in-out;
+    }
+    #checkbox__animation--6:checked ~ .animation__p__mobile {
+       transform: translate(-59px);
+       transition: 0.5s ease-in-out;
+       padding-left: 70px;
+    }
+    #checkbox__animation--7:checked ~ .animation__mobile {
+        transform: translate(-59px);
+        transition: 0.5s ease-in-out;
+    }
+    #checkbox__animation--7:checked ~ .animation__p__mobile {
+       transform: translate(-59px);
+       transition: 0.5s ease-in-out;
+       padding-left: 70px;
+    }
+    #checkbox__animation--8:checked ~ .animation__mobile {
+        transform: translate(-59px);
+        transition: 0.5s ease-in-out;
+    }
+    #checkbox__animation--8:checked ~ .animation__p__mobile {
+       transform: translate(-59px);
+       transition: 0.5s ease-in-out;
+       padding-left: 70px;
+    }
+    #checkbox__animation--9:checked ~ .animation__mobile {
+        transform: translate(-59px);
+        transition: 0.5s ease-in-out;
+    }
+    #checkbox__animation--9:checked ~ .animation__p__mobile {
+       transform: translate(-59px);
+       transition: 0.5s ease-in-out;
+       padding-left: 70px;
+    }
+    #checkbox__animation--10:checked ~ .animation__mobile {
+        transform: translate(-59px);
+        transition: 0.5s ease-in-out;
+    }
+    #checkbox__animation--10:checked ~ .animation__p__mobile {
        transform: translate(-59px);
        transition: 0.5s ease-in-out;
        padding-left: 70px;
@@ -145,7 +223,11 @@
         .animation__mobile  {
             transition: 0.5s ease-in-out;
             transform: translate(-60px);
-        }
+            -webkit-transition: 0.5s ease-in-out;
+            -moz-transition: 0.5s ease-in-out;
+            -ms-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
+}
         .animation__p__mobile {
             transition: 0.5s ease-in-out;
             opacity: 1;
