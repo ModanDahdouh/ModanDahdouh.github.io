@@ -243,7 +243,7 @@ input[type=checkbox]:checked ~ .checkbox__class {
   display: none;
 }
 
-.button__link .button {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,7 +254,8 @@ input[type=checkbox]:checked ~ .checkbox__class {
   width: 218px;
   height: 50px;
 }
-.button__link .button:hover {
+
+.button:hover {
   opacity: 0.8;
 }
 
