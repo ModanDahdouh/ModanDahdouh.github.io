@@ -4,6 +4,7 @@
     color: #101010;
 }
 
+@import "/SASS/index.scss";
 .section__loader {
     pointer-events: none;
     opacity: 0;
