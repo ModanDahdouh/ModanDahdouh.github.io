@@ -202,6 +202,16 @@
     padding-left: 80px;
   }
 }
+input[type=checkbox]:checked ~ .checkbox__class {
+  background-image: url("/assets/images/logo/Coeur.png");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  animation: like 0.5s linear 1;
+  display: flex;
+  -webkit-animation: like 0.5s linear 1;
+}
+
 .checkbox__class {
   background-repeat: no-repeat;
   background-image: url("/assets/images/logo/Like.svg");
@@ -211,16 +221,6 @@
   display: flex;
   animation: likeReturn 0.5s linear 1;
   -webkit-animation: likeReturn 0.5s linear 1;
-}
-
-input[type=checkbox]:checked ~ .checkbox__class {
-  background-image: url("/assets/images/logo/Coeur.png");
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 22px;
-  animation: like 0.5s linear 1;
-  display: flex;
-  -webkit-animation: like 0.5s linear 1;
 }
 
 @keyframes like {
