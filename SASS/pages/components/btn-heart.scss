@@ -7,6 +7,7 @@ input[type="checkbox"]:checked ~ .checkbox__class {
     display: flex;
     -webkit-animation: like 0.5s linear 1;
 }
+
 .checkbox__class  {
     background-repeat: no-repeat;
     background-image: url('/assets/images/logo/Like.svg');
