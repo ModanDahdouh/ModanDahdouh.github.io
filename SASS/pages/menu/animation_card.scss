@@ -1,16 +1,16 @@
 
 .Entrées {
     animation: shake1  2s 1 2s;
-    -webkit-animation: shake1  2s 1 0.5s;
+    -webkit-animation: shake1  2s 1 0s;
 }
 .Plats {
-    animation: shake2  4s 1 3s;
-    -webkit-animation: shake2  4s 1 0.5s;
+    animation: shake2  4s 1 2s;
+    -webkit-animation: shake2  4s 1 0s;
 }
 
 .Desserts {
-    animation: shake3  6s 1 3s;
-    -webkit-animation: shake3  6s 1 0.5s;
+    animation: shake3  6s 1 2s;
+    -webkit-animation: shake3  6s 1 0s;
 }
 
 @keyframes shake1 {

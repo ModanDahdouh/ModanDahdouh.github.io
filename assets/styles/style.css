@@ -514,17 +514,17 @@ input[type=checkbox]:checked ~ .checkbox__class {
 }
 .Entrées {
   animation: shake1 2s 1 2s;
-  -webkit-animation: shake1 2s 1 0.5s;
+  -webkit-animation: shake1 2s 1 0s;
 }
 
 .Plats {
-  animation: shake2 4s 1 3s;
-  -webkit-animation: shake2 4s 1 0.5s;
+  animation: shake2 4s 1 2s;
+  -webkit-animation: shake2 4s 1 0s;
 }
 
 .Desserts {
-  animation: shake3 6s 1 3s;
-  -webkit-animation: shake3 6s 1 0.5s;
+  animation: shake3 6s 1 2s;
+  -webkit-animation: shake3 6s 1 0s;
 }
 
 @keyframes shake1 {
@@ -561,7 +561,7 @@ input[type=checkbox]:checked ~ .checkbox__class {
 
 @media (min-width: 365px) {
   .main__menu {
-    min-height: 1311px;
+    min-height: 1298px;
   }
   .la-note-enchantee {
     height: 1385px;
@@ -690,95 +690,32 @@ input[type=checkbox]:checked ~ .checkbox__class {
   transform: translate(0);
 }
 
-@media (min-width: 365px) {
+@media (min-width: 365px) and (max-width: 1440px) {
   .card__menu {
     height: 65px;
   }
-  #checkbox__animation--1:checked ~ .animation__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-  }
-  #checkbox__animation--1:checked ~ .animation__p__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-    padding-left: 70px;
-  }
-  #checkbox__animation--2:checked ~ .animation__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-  }
-  #checkbox__animation--2:checked ~ .animation__p__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-    padding-left: 70px;
-  }
-  #checkbox__animation--3:checked ~ .animation__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-  }
-  #checkbox__animation--3:checked ~ .animation__p__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-    padding-left: 70px;
-  }
-  #checkbox__animation--4:checked ~ .animation__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-  }
-  #checkbox__animation--4:checked ~ .animation__p__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-    padding-left: 70px;
-  }
-  #checkbox__animation--5:checked ~ .animation__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-  }
-  #checkbox__animation--5:checked ~ .animation__p__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-    padding-left: 70px;
-  }
-  #checkbox__animation--6:checked ~ .animation__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-  }
-  #checkbox__animation--6:checked ~ .animation__p__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-    padding-left: 70px;
-  }
-  #checkbox__animation--7:checked ~ .animation__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-  }
-  #checkbox__animation--7:checked ~ .animation__p__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-    padding-left: 70px;
-  }
-  #checkbox__animation--8:checked ~ .animation__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-  }
-  #checkbox__animation--8:checked ~ .animation__p__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-    padding-left: 70px;
-  }
-  #checkbox__animation--9:checked ~ .animation__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-  }
-  #checkbox__animation--9:checked ~ .animation__p__mobile {
-    transform: translate(-59px);
-    transition: 0.5s ease-in-out;
-    padding-left: 70px;
-  }
+  #checkbox__animation--1:checked ~ .animation__mobile,
+  #checkbox__animation--2:checked ~ .animation__mobile,
+  #checkbox__animation--3:checked ~ .animation__mobile,
+  #checkbox__animation--4:checked ~ .animation__mobile,
+  #checkbox__animation--5:checked ~ .animation__mobile,
+  #checkbox__animation--6:checked ~ .animation__mobile,
+  #checkbox__animation--7:checked ~ .animation__mobile,
+  #checkbox__animation--8:checked ~ .animation__mobile,
+  #checkbox__animation--9:checked ~ .animation__mobile,
   #checkbox__animation--10:checked ~ .animation__mobile {
     transform: translate(-59px);
     transition: 0.5s ease-in-out;
   }
+  #checkbox__animation--1:checked ~ .animation__p__mobile,
+  #checkbox__animation--2:checked ~ .animation__p__mobile,
+  #checkbox__animation--3:checked ~ .animation__p__mobile,
+  #checkbox__animation--4:checked ~ .animation__p__mobile,
+  #checkbox__animation--5:checked ~ .animation__p__mobile,
+  #checkbox__animation--6:checked ~ .animation__p__mobile,
+  #checkbox__animation--7:checked ~ .animation__p__mobile,
+  #checkbox__animation--8:checked ~ .animation__p__mobile,
+  #checkbox__animation--9:checked ~ .animation__p__mobile,
   #checkbox__animation--10:checked ~ .animation__p__mobile {
     transform: translate(-59px);
     transition: 0.5s ease-in-out;
@@ -805,6 +742,9 @@ input[type=checkbox]:checked ~ .checkbox__class {
     transition: 0.5s ease-in-out;
     opacity: 1;
     transform: translate(-59px);
+  }
+  .card__menu {
+    height: 65px;
   }
 }
 * {
